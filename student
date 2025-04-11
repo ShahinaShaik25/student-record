@@ -1,0 +1,22 @@
+public class Student {
+    private String name;
+    private int rollNo;
+    private String department;
+    private double marks;
+
+    public Student(String name, int rollNo, String department, double marks) {
+        this.name = name;
+        this.rollNo = rollNo;
+        this.department = department;
+        this.marks = marks;
+    }
+
+    public int getRollNo() {
+        return rollNo;
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + ", Roll No: " + rollNo + ", Dept: " + department + ", Marks: " + marks;
+    }
+}
